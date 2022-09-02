@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterAccount">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5B08EE"
+        tools:context=".LoginPage"
+        tools:layout_editor_absoluteX="-77dp"
+        tools:layout_editor_absoluteY="95dp">
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="380dp"
+            android:layout_height="61dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Create Your Account For login The Defence Research"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#1A1919"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.089" />
+
+        <EditText
+            android:id="@+id/editSignEmail"
+            style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
+            android:layout_width="248dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/txtLogin"
+            app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+
+        <EditText
+            android:id="@+id/editSignPassword"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:hint="ConfirmPassword"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editSignEmail"
+            app:layout_constraintStart_toStartOf="@+id/editSignEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editSignEmail"
+            app:layout_constraintStart_toStartOf="@+id/editSignEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editRollNumber" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editSignEmail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editSignEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+        <EditText
+            android:id="@+id/editRollNumber"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:hint="Roll Number"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editSignEmail"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/editSignEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editSignEmail" />
+
+        <Button
+            android:id="@+id/btnRegSignUp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#B2BAE8"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sign Up"
+            android:textColor="#F4051D"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="If you have already registered"
+            android:textColor="#F6430A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editSignPassword"
+            app:layout_constraintVertical_bias="0.258" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
